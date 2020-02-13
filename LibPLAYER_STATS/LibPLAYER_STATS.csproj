@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F6BE8F06-B9AA-45C8-A75E-7F51ABCB4443}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DOP_Sandbox</RootNamespace>
-    <AssemblyName>DOP Sandbox</AssemblyName>
+    <ProjectGuid>{9BD17C10-F8EA-426E-B10D-BE473874307D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibPLAYER_STATS</RootNamespace>
+    <AssemblyName>LibPLAYER_STATS</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,15 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibNPC_FACTORY">
-      <HintPath>..\LibNPC_FACTORY\bin\Debug\LibNPC_FACTORY.dll</HintPath>
-    </Reference>
-    <Reference Include="LibNPC_STATS">
-      <HintPath>..\LibNPC_STATS\bin\Debug\LibNPC_STATS.dll</HintPath>
-    </Reference>
-    <Reference Include="LibPLAYER_STATS">
-      <HintPath>..\LibPLAYER_STATS\bin\Debug\LibPLAYER_STATS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,11 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="IPLAYER_STATS.cs" />
+    <Compile Include="PLAYER_STATS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

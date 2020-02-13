@@ -62,7 +62,7 @@ namespace LibNPC_STATS
         {
             int index = ID.IndexOf(in_ID);
 
-            switch (Behaviour[index][0])
+            switch (Behaviour[index][1])
             {
                 case "Friendly": Friendlies.RemoveAt(Friendlies.IndexOf(in_ID)); break;
                 case "Hostile": Hostiles.RemoveAt(Hostiles.IndexOf(in_ID)); break;

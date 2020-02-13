@@ -36,9 +36,9 @@ namespace MainSpace
             string[] traits = new string[NPC_FACTORY.NumberOfTraits];
 
             //creates stats[] for the entity
-            stats = factory.LoadStats(NPC_FACTORY.NPC_Type.Old_Dragon);
+            stats = factory.LoadStats(NPC_Type.Old_Dragon);
             //creates traits[] for the entity
-            traits = factory.LoadTraits(NPC_FACTORY.NPC_Type.Old_Dragon);
+            traits = factory.LoadTraits(NPC_Type.Old_Dragon);
             //Adds a new entity
             NPCstats.AddEntity(stats, traits);
 
@@ -48,8 +48,8 @@ namespace MainSpace
                 case "Drunkard":
                     for (int i = 0; i < number; i++)
                     {
-                        stats = factory.LoadStats(NPC_FACTORY.NPC_Type.Drunkard);
-                        traits = factory.LoadTraits(NPC_FACTORY.NPC_Type.Drunkard);
+                        stats = factory.LoadStats(NPC_Type.Drunkard);
+                        traits = factory.LoadTraits(NPC_Type.Drunkard);
                         NPCstats.AddEntity(stats, traits);
                     }
                     break;
@@ -57,8 +57,8 @@ namespace MainSpace
                 case "Guard_Archer":
                     for (int i = 0; i < number; i++)
                     {
-                        stats = factory.LoadStats(NPC_FACTORY.NPC_Type.Guard_Archer);
-                        traits = factory.LoadTraits(NPC_FACTORY.NPC_Type.Guard_Archer);
+                        stats = factory.LoadStats(NPC_Type.Guard_Archer);
+                        traits = factory.LoadTraits(NPC_Type.Guard_Archer);
                         NPCstats.AddEntity(stats, traits);
                     }
                     break;
@@ -66,8 +66,8 @@ namespace MainSpace
                 case "Old_Dragon":
                     for (int i = 0; i < number; i++)
                     {
-                        stats = factory.LoadStats(NPC_FACTORY.NPC_Type.Old_Dragon);
-                        traits = factory.LoadTraits(NPC_FACTORY.NPC_Type.Old_Dragon);
+                        stats = factory.LoadStats(NPC_Type.Old_Dragon);
+                        traits = factory.LoadTraits(NPC_Type.Old_Dragon);
                         NPCstats.AddEntity(stats, traits);
                     }
                     break;

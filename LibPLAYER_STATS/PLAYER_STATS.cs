@@ -56,6 +56,8 @@ namespace LibPLAYER_STATS
         public int Agi { get; private set; }
         public int Int { get; private set; }
 
+        public int Health { get; private set; }
+
         public int Level { get; private set; }
         public int CurrentExp { get; private set; }
         public int RemainingExp { get; private set; }

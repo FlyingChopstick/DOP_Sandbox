@@ -21,24 +21,25 @@ namespace LibNPC_STATS
         {
             ID.Add(next_ID);
             Alive.Add(next_ID);
-            next_ID++;
+            
 
             Str.Add(stats[0]);
             Agi.Add(stats[1]);
             Int.Add(stats[2]);
 
+            //Behaviour.Add(traits);
             Behaviour.Add(traits);
 
             ////selects the corresponding Behaviour
             switch (traits[1])
             {
-                case "Friendly": Friendlies.Add(stats[0]); break;
+                case "Friendly": Friendlies.Add(next_ID); break;
 
-                case "Hostile": Hostiles.Add(stats[0]); break;
+                case "Hostile": Hostiles.Add(next_ID); break;
 
-                case "Neutral": Neutrals.Add(stats[0]); break;
+                case "Neutral": Neutrals.Add(next_ID); break;
 
-                default: Console.WriteLine("Error, assuming Neutral"); Neutrals.Add(stats[0]); break;
+                default: Console.WriteLine("Error, assuming Neutral"); Neutrals.Add(next_ID); break;
             }
 
             switch (traits[2])
@@ -46,6 +47,8 @@ namespace LibNPC_STATS
                 case "Melee": AttackDamage.Add(stats[0] + stats[1]); break;
                 case "Ranged": AttackDamage.Add(stats[1] + stats[2]); break;
             }
+
+            next_ID++;
         }
 
         //Kills an Entity, moving it to the Dead list and removing from it's Alignment list

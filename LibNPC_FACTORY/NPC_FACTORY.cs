@@ -15,6 +15,9 @@ namespace LibNPC_FACTORY
     }
 
 
+
+
+
     //Handles the assignment of the Stats[] and Traits[]
     public class NPC_FACTORY : INPC_FACTORY
     {
@@ -23,13 +26,6 @@ namespace LibNPC_FACTORY
         public const int NumberOfStats = 3;
 
         Random random = new Random();
-
-        public enum NPC_Type
-        {
-            Drunkard,
-            Guard_Archer,
-            Old_Dragon
-        }
 
         Dictionary<NPC_Type, int> Behavior = new Dictionary<NPC_Type, int>()
         {

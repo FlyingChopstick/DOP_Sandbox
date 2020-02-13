@@ -16,14 +16,6 @@ namespace LibNPC_STATS
     //Contains information about all NPCs
     public class NPC_STATS : INPC_STATS
     {
-        public enum AttackType
-        {
-            Melee,
-            Ranged
-        }
-
-
-
         //Adds stats of the new Entity to the Lists
         public void AddEntity(int[] stats, string[] traits)
         {
@@ -36,7 +28,6 @@ namespace LibNPC_STATS
             Int.Add(stats[2]);
 
             Behaviour.Add(traits);
-
 
             ////selects the corresponding Behaviour
             switch (traits[1])
